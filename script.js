@@ -50,4 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Thiết lập ban đầu: đặt nguồn cho video đầu tiên (nó sẽ tự phát do thuộc tính 'autoplay')
     players[0].src = videoSources[currentVideoIndex];
+
+        // Chặn menu chuột phải trên toàn bộ trang
+    window.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+    });
 });
